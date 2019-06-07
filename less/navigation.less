@@ -1,1 +1,51 @@
-// Navigation code here
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding-top:20px;
+    background-color: #F6F6F6;
+
+    .nav-wrapper {
+        max-width:800px;
+        width:100%;
+        margin: 0 auto;
+
+    .bottom {
+        margin: 0;
+        padding:0;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        list-style:none;
+        flex-direction: row;
+
+        a {
+            text-decoration: none;
+            padding:20px;
+            margin-right:10px;
+            font-size:2em;
+            color:black;
+            @media @phone {
+                padding:10px;
+                font-size:1.2em;
+            }
+        }
+    }
+    
+    .top{
+        flex-grow: 1;
+        text-align:center;
+        
+               
+        a {
+            text-decoration: none;
+            padding-top: 20px;
+            padding-bottom:20px;
+            font-size:4em;
+            color:black;
+            font-family:@header-font;
+        }
+    }
+}
+}
